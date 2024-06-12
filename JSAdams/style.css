@@ -1,0 +1,275 @@
+* {
+    margin: 2;
+    padding: 2;
+    border: 2;
+    image-rendering: auto;
+    font-size: 100%;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 200%;
+    vertical-align: baseline;
+    text-align: justify;
+    list-style: none;
+    background-color: rgb(238, 241, 148);
+    background-attachment: 200px;
+    color: rgb(193, 2, 193);
+
+}
+
+h1 {
+    text-align: center;
+    color: rgb(106, 245, 127);
+}
+
+p,
+h2 {
+    color: rgb(177, 132, 240);
+    text-align: center;
+    font-size: medium;
+}
+
+p,
+li {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+    color: rgb(9, 49, 247);
+}
+
+img {
+    display:inline-flexbox;
+    margin: 0 auto;
+    width: 15%;
+    text-decoration: wavy;
+    display: grid;
+}
+
+.conteudo {
+    width: 1024px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    color: aqua;
+}
+
+.linha {
+    display: flex;
+    flex-direction: row;
+    color: aqua;
+}
+
+header section {
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: 3s;
+}
+
+header nav ul li a {
+    border-radius: 0%;
+    margin: 0px 15px;
+    color: #0279e2;
+}
+
+.botao {
+    padding: 5px 30px;
+    border-radius: 10px;
+    display: inline;
+}
+
+.botao.botao-destaque {
+    background: #c30878;
+    color: #0279e2;
+}
+
+.sobre {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sobre article {
+    width: 350px;
+}
+
+.sobre article h1 {
+    font-size: 200px;
+    line-height: 90%;
+    font-weight: 400;
+    color: #0279e2;
+    
+}
+
+.sobre article h2,
+.sobre article p {
+    color: #5fabed;
+}
+
+.sobre article h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 200%;
+    color: #44efec;
+}
+
+.sobre article p {
+    margin: 10px 0 40px;
+}
+
+.sobre article figcaption img {
+    width: 700px;
+}
+
+footer ul li {
+    margin: 60px;
+}
+
+footer ul li a img {
+    width: 60px;
+    columns: 10px;
+}
+
+@media(max-width: 1150px) {
+    .conteudo {
+        width: 950px;
+    }
+}
+
+@media(max-width: 1024px) {
+
+    .conteudo {
+        width: 850px;
+    }
+
+    .sobre figcaption img {
+        width: 600px;
+    }
+}
+
+@media(max-width: 915px) {
+    .conteudo {
+        width: 600px;
+    }
+
+    .linha {
+        flex-direction: column;
+    }
+
+    header nav {
+        margin: 30px 0;
+    }
+
+    .sobre article {
+        width: 100%;
+    }
+
+    .sobre figcaption img {
+        width: 100%;
+        margin: 30px 0 0 0;
+    }
+
+    footer .linha {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 665px) {
+    .conteudo {
+        width: 400px;
+    }
+}
+
+@media(max-width: 450px) {
+    .conteudo {
+        width: 290px;
+    }
+
+    header nav {
+        width: 100%;
+        padding: 10px 0 20px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 2;
+        padding: 2;
+        border: 2;
+        font-size: 100%;
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: 300;
+        vertical-align: baseline;
+        text-decoration: none;
+        list-style: none;
+
+    }
+
+    /* Formulário */
+    fieldset {
+        width: 60%;
+        padding: 10px 0 20px;
+        margin-left: 10px;
+        border: 2px solid rgb(14, 163, 212);
+        border-radius: 10px;
+        padding: 20px;
+        color: rgb(241, 16, 173);
+    }
+
+    .agrupamento {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .agrupamento-botao {
+        padding-top: 10px;
+        color: rgb(239, 227, 9);
+    }
+
+    .entrada:focus {
+        outline: none;
+        box-shadow: 0 0 0 0.2rem rgba(12, 222, 194, 0.5);
+        color: rgb(239, 9, 181);
+    }
+
+    .entrada.mensagem {
+        resize: none;
+        color: rgb(239, 227, 9);
+    }
+
+    .rotulo {
+        padding-bottom: 2.5px;
+        padding-top: 40px;
+        font-weight: 600;
+    }
+
+    h3 {
+        font-family: inherit;
+        flex: 25%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-evenly;
+        grid-template-columns: 4fr;
+        grid-template-rows: 4fr;
+
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-family: 'Roboto' arial, cursive;
+        text-align: center;
+    }
+
+}
