@@ -1,0 +1,115 @@
+/* Define as cores e outros valores que serão usados em várias partes do CSS */
+:root {
+    --main-bg-color: #aedcf7;
+    --main-text-color: #1493bd;
+    --container-bg-color: #c9b6db;
+    --footer-bg-color: #4296df;
+    --footer-text-color: #2aebeb;
+    --pix-info-color: #1493bd;
+    --donation-button-color: #4296df;
+    --donation-button-hover-color: #80CBC4;
+    --header-bg-color: #F8BBD0;
+}
+
+/* Remove as margens e o padding padrão do body, h1 e p */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Define as propriedades padrão do body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+}
+
+/* Define as propriedades padrão do container e do footer */
+.container, .footer {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Define a cor de fundo e a sombra do container */
+.container {
+    background-color: var(--container-bg-color);
+    box-shadow: 0 2px 5px rgba(246, 244, 244, 0.1);
+}
+
+/* Define como as imagens serão exibidas no container de imagens */
+.images-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/* Define as propriedades das imagens dos animais */
+.animal-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Define as propriedades da barra de progresso de doações */
+#donation-progress {
+    width: 80%;
+    height: 20px;
+    margin: 20px auto;
+    background-color: var(--main-text-color);
+    border-radius: 10px;
+}
+
+/* Define as propriedades do footer */
+.footer {
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    border-top: 1px solid #f272db;
+}
+
+/* Define as propriedades do cartão de informações do Pix */
+#pix-info {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--pix-info-color);
+    padding: 20px;
+    border: 5px solid var(--pix-info-color);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50px;
+    width: 60%;
+    margin: 20px auto;
+    background-color: #FCE4EC;
+}
+
+/* Define as propriedades do botão de doação */
+.donation-button {
+    display: inline-block;
+    background-color: var(--donation-button-color);
+    color: white;
+    text-align: center;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 50px;
+    transition: background-color 0.5s ease;
+}
+
+/* Define a cor de fundo do botão de doação quando o mouse está sobre ele */
+.donation-button:hover {
+    background-color: var(--donation-button-hover-color);
+}
+
+/* Define as propriedades do h1 dentro do container */
+.container h1 {
+    background-color: var(--header-bg-color);
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(134, 30, 246, 0.1);
+}

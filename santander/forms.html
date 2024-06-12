@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Define o conjunto de caracteres para a página -->
+    <meta charset="UTF-8">
+    <!-- Define a viewport para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define o título da página -->
+    <title>Doação - Dream Pet</title>
+    <!-- Link para o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho da página -->
+    <header class="container">
+        <!-- Imagem de um cachorro -->
+        <img src="assets/dog.jpg" alt="Imagem de um cachorro" class="animal-image">
+        <!-- Container para o formulário de doação -->
+        <div class="form-container">
+            <!-- Título do formulário -->
+            <h1 id="form-title">Formas de ajudar</h1>
+            <!-- Formulário de doação -->
+            <form id="donation-form">
+                <!-- Campo para selecionar o produto a doar -->
+                <label for="name">Selecione o Produto:</label>
+                <select id="name" name="name" aria-label="Selecione o produto a doar">
+                    <option value="ração">Ração</option>
+                    <option value="sache">Sachê</option>
+                    <option value="produtos de higiene">Produtos de higiene</option>
+                    <option value="medicamentos">Medicamentos</option>
+                </select>
+                <!-- Campo para digitar a quantidade a doar -->
+                <label for="amount">Quantidade:</label>
+                <input type="number" id="amount" name="amount" aria-label="Digite a quantidade a doar">
+                <!-- Informação da chave Pix para doação -->
+                <p id="pix-info">Chave Pix: <span id="pix-key">dreampet@donation.com</span></p>
+            </form>
+        </div>
+        <!-- Imagem de um gato -->
+        <img src="assets/cat.jpg" alt="Imagem de um gato" class="animal-image">
+    </header>
+    <!-- Rodapé da página -->
+    <footer class="footer">
+        <!-- Texto de direitos autorais -->
+        <p>© 2022 Dream Pet. Todos os direitos reservados.</p>
+    </footer>
+    <!-- Script para gerenciar as doações -->
+    <script src="donations.js"></script>
+</body>
+</html>
