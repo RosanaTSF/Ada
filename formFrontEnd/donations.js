@@ -48,3 +48,22 @@ setInterval(function() {
         }
     }
 }, 500);
+
+// Função para adicionar uma doação
+function addDonation(event) {
+    // Previne o comportamento padrão do formulário
+    event.preventDefault();
+
+    // Obtém o tipo e a quantidade da doação do formulário
+    var type = document.getElementById('name').value;
+    var amount = Number(document.getElementById('amount').value);
+
+    // Adiciona a nova doação à lista
+    donations.push({ type: type, amount: amount });
+
+    // Recalcula o total
+    total = donations.reduce((total, donation) => total + donation.amount, 0);
+
+    // Atualiza o valor máximo do progresso
+    progress.max = total;
+}
